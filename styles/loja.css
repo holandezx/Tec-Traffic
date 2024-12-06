@@ -1,0 +1,110 @@
+.loja__titulo__produto {
+    font-size: 65px;
+}
+.loja {
+    color: var(--cor-primaria);
+    display: flex;
+    background-color: var(--cor-secundaria);
+    justify-content: center;
+}
+.loja__texto {
+    align-items: center;
+    flex-direction: column;
+    padding: 6em 0
+}
+.loja__titulo{
+    font-family: var(--font-primaria);
+    color: var(--cor-primaria);
+    font-size: 40px;
+
+}
+.loja__paragrafo {
+    font-family: var(--font-secundaria);
+    color: var(--cor-primaria);
+    font-size: 20px;
+    padding: 1em 15em 1em 0;
+}
+.loja__paragrafo2 {
+    padding: 0 15em 2em 0;
+}
+.loja__botão {
+    text-decoration: none;
+    color: var(--cor-primaria);
+    font-family: var(--font-secundaria);
+    font-weight: 600;
+    background-color: var(--cor-terciaria);
+    padding: 1em;
+    border-radius: 16px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Sombra inicial */
+    display: inline-block; /* Garante que o botão seja tratado como um bloco para animação */
+    transition: all 0.3s ease; /* Transição suave para todas as mudanças */
+}
+
+/* Efeito de hover */
+.loja__botão:hover {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria); /* Mudança de cor no hover */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4); /* Sombra mais forte no hover */
+    transform: translateY(-10px); /* Animação de elevação (subir) */
+}
+.loja__imagem {
+    max-width: 90%;
+    border-radius: 80px;
+}
+.div__imagem {
+    padding: 3em 5em;
+}
+.Especificações__titulo {
+    font-family: var(--font-primaria);
+    font-weight: 700;
+    font-size: 50px;
+    padding: 0 0 2em 0;
+    color: var(--cor-secundaria);
+}
+.loja__Especificações {
+    background-color: var(--cor-primaria);
+    padding: 10em;
+}
+.tabela {
+    border: 2px solid var(--cor-secundaria);
+    width: 100%;
+    border-collapse: collapse;
+}
+.linha__informação {
+    border: 2px solid var(--cor-secundaria);
+    color: var(--cor-secundaria);
+    font-family: var(--font-primaria);
+    font-size: 20px;
+    padding: 0.5em;
+}
+.linha__conteudo {
+    border: 2px solid var(--cor-secundaria);
+    color: var(--cor-secundaria);
+    font-family: var(--font-secundaria);
+    font-size: 20px;
+    padding: 0.5em;
+}
+
+@media (max-width: 1024px) {
+    .loja__titulo__produto {
+        font-size: 3em;
+    }
+    .loja {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .loja__imagem {
+        max-width: 60%;
+    }
+    .div__imagem {
+        padding: 3em 0 1em 0;
+    }
+    .loja__paragrafo{
+        padding: 2em 4em;
+        font-size: 1.5em;
+    }
+    .loja__botão {
+        font-size: 1.5em;
+    }
+}

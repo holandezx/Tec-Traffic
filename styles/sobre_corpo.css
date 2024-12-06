@@ -1,0 +1,93 @@
+.sobre__corpo {
+    background-image: none;
+}
+.sobre__pagina {
+    display: flex;
+    flex-direction: column;
+}
+.titulo1 {
+    font-family: var(--font-primaria);
+    font-weight: 700;
+    font-size: 3.125rem; /* 50px */
+    padding: 0 0 1em 0;
+}
+.texto1 {
+    font-weight: 400;
+    font-family: var(--font-primaria);
+    font-size: 1.125rem; /* 18px */
+}
+.empresa {
+    color: var(--cor-primaria);
+    display: flex;
+    background-color: var(--cor-secundaria);
+    justify-content: center;
+    padding: 0 0 3em 0;
+}
+.empresa2 {
+    align-items: center;
+    flex-direction: column;
+    margin: 1em 13em 1em 5em;
+}
+.imagem_sobre_sobre {
+    max-width: 40%;
+    align-self: flex-end;
+    padding: 0 5em 0 0;
+}
+.confiabilidade__sobre {
+    padding: 5em 0 0 0;
+}
+.sobre__produtos {
+    display: flex;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    padding: 5em; /* 5em já está em rem, sem conversão */
+}
+.sobre__produtos2 {
+    align-items: center;
+    flex-direction: column;
+    margin: 2em 2em 2em 13em;
+}
+.imagem_sobre_produto {
+    padding: 0 0 0 5em;
+}
+
+
+
+
+
+@media (max-width: 1024px) {
+    .titulo1 {
+        font-size: 4rem; /* Quase mantém o tamanho original */
+        text-align: center;
+    }
+
+    .texto1 {
+        font-size: 2rem; /* Um pouco maior que o original */
+        text-align: center;
+    }
+    .sobre_textotopicos_paragrafo {
+       
+        font-size: 2em;
+    }
+    .sobre__pagina {
+        flex-direction: column;
+    }
+    .empresa, .sobre__produtos, .confiabilidade__sobre {
+        flex-direction: column;
+        padding: 2em 1em;
+    }
+
+    .empresa2, .sobre__produtos2 {
+        margin: 1em;
+    }
+
+    .imagem_sobre_sobre {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .sobre__pagina {
+        margin: 0;
+        padding: 0;
+    }
+}
