@@ -512,3 +512,96 @@
         text-decoration: underline; /* Adiciona destaque ao passar o mouse */
     }
 }
+@media (max-width: 480px) {
+    .cabeçalho {
+        flex-direction: column;
+        align-items: center;
+    }
+    .corpo{
+        margin: 0;
+        padding: 0;
+    }
+    .Titulo__home {
+        font-size: 2em;
+    }
+    .paragrafo{
+        font-size: 1.5em;
+        padding: 0 0 3em 0;
+    }
+
+    .lista-menu {
+        flex-direction: column;
+        gap: 0.5em; /* Reduz o espaço entre os itens do menu */
+    }
+
+    .avaliações__container {
+        margin: 1em 1.5em;
+    }
+    .Sobre {
+        margin: 0;
+        padding: 0;
+    }
+    .Sobre__texto {
+        font-size: 1.5em;
+    }
+    .sobre__texto__lista{
+        font-size: 0.7rem;
+    }
+    .sobre__pagina, .empresa, .sobre__produtos, .confiabilidade__sobre {
+        padding: 1em; /* Reduz o padding interno para ajustar o conteúdo */
+    }
+
+    .imagem_sobre_sobre {
+        max-width: 100%;
+    }
+
+    .titulo1 {
+        font-size: 1.5rem; /* Reduz o tamanho do título para legibilidade em dispositivos menores */
+    }
+
+    .texto1 {
+        font-size: 0.75rem; /* Ajusta o tamanho do texto */
+    }
+    .contato__bloco__texto__linha {
+        flex-direction: column;
+        padding: 0;
+    }
+    .contato__bloco__texto__redes{
+        margin: 1em;
+    }
+    .sobre_textotopico_link__sobre {
+        margin: 1em 3em; /* Ajusta o espaço ao redor dos links */
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column; /* Alinha os itens verticalmente */
+        align-items: center; /* Centraliza os elementos horizontalmente */
+        padding: 0.5em; /* Ajusta o espaço interno */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .footer__left, .footer__right {
+        width: 100%; /* Garante que ocupem toda a largura */
+        margin: 0.25em 0; /* Espaçamento entre os blocos */
+    }
+
+    .footer__menu {
+        padding: 0;
+        list-style: none; /* Remove as bolinhas */
+    }
+
+    .footer__menu li {
+        margin: 0.25em 0; /* Espaçamento entre os links */
+    }
+
+    .footer__link {
+        font-size: 0.875rem; /* Aumenta o tamanho do texto para melhorar a legibilidade */
+        color: var(--cor-secundaria); /* Utilize a cor padrão do tema */
+        text-decoration: none; /* Remove sublinhado */
+    }
+
+    .footer__link:hover {
+        text-decoration: underline; /* Adiciona destaque ao passar o mouse */
+    }
+}

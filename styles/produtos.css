@@ -2,7 +2,6 @@
     background-color: var(--cor-primaria);
     background-image: none;
     color: var(--cor-secundaria);
-    padding: 0 15em;
 }
 .Produtos__produtos {
     background-color: var(--cor-secundaria);

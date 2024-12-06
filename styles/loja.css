@@ -63,12 +63,15 @@
 }
 .loja__Especificações {
     background-color: var(--cor-primaria);
-    padding: 10em;
+    text-align: center;
+    padding: 10em 0 0 0;
 }
 .tabela {
     border: 2px solid var(--cor-secundaria);
-    width: 100%;
+    width: 80%;
     border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
 }
 .linha__informação {
     border: 2px solid var(--cor-secundaria);
