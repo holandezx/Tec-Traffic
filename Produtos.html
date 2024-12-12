@@ -14,9 +14,9 @@
     <link rel="shortcut icon" type="imagex/png" href="img/181c2c-_1_.ico">
 </head>
     <body>
-        <header class="cabeçalho"> 
-            <a href="index.html"><img src="img/logo tec.png" alt="Logo TecTraffic" class="Logo"></a>
-            <ul class="lista-menu">
+        <header class="cabeçalho">
+            <a href="index.html"><img src="img/logo tec.png" alt="Logo TecTraffic" class="logo"></a>
+            <ul class="lista-menu" id="listaMenu">
                 <li class="lista-menu__item">
                     <a href="index.html" class="lista-menu__link">Home</a>
                 </li>
@@ -24,13 +24,34 @@
                     <a href="sobre.html" class="lista-menu__link">Sobre</a>
                 </li>
                 <li class="lista-menu__item">
-                    <a href="Produtos.html" class="lista-menu__link"> Produtos</a>
-                </li>
-                <li class="lista-menu__item Atendimento">
-                    <a href="https://wa.me/message/SDO6HAV2ZCFGC1" class="Atendimento__texto" target="_blank">ATENDIMENTO ONLINE</a>
+                    <a href="produtos.html" class="lista-menu__link">Produtos</a>
                 </li>
             </ul>
+            <button class="menu-hamburguer" id="menuHamburguer">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+            <div class="atendimento">
+                <a href="https://wa.me/message/SDO6HAV2ZCFGC1" target="_blank" class="atendimento__link">Atendimento Online</a>
+            </div>
         </header>
+    
+        
+        
+        <script>
+            const menuHamburguer = document.getElementById('menuHamburguer');
+            const listaMenu = document.getElementById('listaMenu');
+            
+            menuHamburguer.addEventListener('click', () => {
+                menuHamburguer.classList.toggle('ativo');
+                if (menuHamburguer.classList.contains('ativo')) {
+                    listaMenu.style.display = 'block';
+                } else {
+                    listaMenu.style.display = 'none';
+                }
+            });
+        </script>
         <section class="produtos__section">
                     <h1 class="Titulo">Nossos Produtos</h1>
         </section>

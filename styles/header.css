@@ -1,7 +1,11 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+.logo {
+    max-width: 30%; /* Tamanho máximo para manter a proporção */
+    height: auto; /* Mantém a proporção */
+    transition: max-width 0.3s ease; /* Animação para redimensionamento */
 }
 
 .cabeçalho {
@@ -156,5 +160,35 @@
 
     .atendimento {
         margin-left: 1em;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        max-width: 35%; /* Reduz o tamanho em telas menores */
+    }
+
+    .menu-hamburguer {
+        width: 100px;
+        height: 80px;
+    }
+
+    .menu-hamburguer div {
+        height: 5px; /* Linhas mais finas para visual mais leve */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        max-width: 50%; /* Ainda menor para telas muito pequenas */
+    }
+
+    .menu-hamburguer {
+        width: 100px;
+        height: 80px;
+    }
+
+    .menu-hamburguer div {
+        height: 5px; /* Mais fino ainda para dispositivos menores */
     }
 }
