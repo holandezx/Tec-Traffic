@@ -199,7 +199,7 @@
 .Sobre__conteudo {
     align-items: center;
     flex-direction: column;
-    margin: 1em 10em 1em 5em; /* 1em = 16px, 10em = 160px, 5em = 80px */
+    margin: 1em 1em 1em 5em; /* 1em = 16px, 10em = 160px, 5em = 80px */
 }
 
 .Sobre__texto {
@@ -270,6 +270,48 @@
 .imagem_sobre_home {
     max-width: 40%;
 }
+
+
+
+
+
+
+.clientes{
+    background-color: var(--cor-secundaria);
+    text-align: center;
+    padding: 0 4em;
+}
+.clientes__titulo {
+    font-family: var(--font-primaria);
+    font-size: 2rem;
+    padding: 3rem;
+}
+.clientes__lista {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+  }
+  .clientes__lista__linha {
+    display: flex;
+  }
+  .clientes__lista__conteudo {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
 .contato {
     background-image: linear-gradient(to bottom, var(--cor-secundaria) 40%, var(--cor-footer) 40%);
     display: flex;
@@ -441,6 +483,12 @@
         font-size: 1.4em;
         text-align: center;
         margin: 0 13em;
+    }
+    .clientes__lista {
+        flex-direction: column;
+    }
+    .clientes__lista__linha {
+        flex-direction: column;
     }
     .contato__bloco {
         padding: 2rem 3rem; /* Reduz o espaçamento interno */
