@@ -486,7 +486,7 @@
     }
     .clientes__lista {
         flex-direction: column;
-    }s
+    }
     .clientes__lista__linha {
         flex-direction: column;
     }
@@ -533,6 +533,12 @@
     .sobre_textotopico_link__sobre {
         margin: 2em 7em;
     }
+    .clientes__lista {
+        flex-direction: column;
+    }
+    .clientes__lista__linha {
+        flex-direction: column;
+    }
     .footer {
         display: flex;
         flex-direction: column; /* Alinha os itens verticalmente */
@@ -554,7 +560,7 @@
     .footer__menu li {
         margin: 0.5em 0; /* Espaçamento entre os links */
     }
-
+    
     .footer__link {
         font-size: 1rem; /* Aumente o tamanho do texto para melhorar a legibilidade */
         color: var(--cor-secundaria); /* Utilize a cor padrão do tema */
@@ -604,6 +610,13 @@
         padding: 1em; /* Reduz o padding interno para ajustar o conteúdo */
     }
 
+    .clientes__lista {
+        flex-direction: column;
+    }
+    .clientes__lista__linha {
+        flex-direction: column;
+    }
+    
     .imagem_sobre_sobre {
         max-width: 100%;
     }
