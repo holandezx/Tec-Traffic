@@ -415,10 +415,7 @@
 
 
 /* Estilos para dispositivos com largura máxima de 1024px (tablets) */
-@media (max-width: 1024px) {
-    .cabeçalho {
-        display: none;
-    }
+@media (max-width: 1200px) {
     .corpo {
         margin: 0 5rem; /* Reduz as margens */
         padding: 0 0 6rem; /* Reduz o padding inferior */ 
@@ -439,7 +436,11 @@
         font-size: 2em;
         margin: 3em 0;
     }
-
+    .corpo {
+        margin: 0;
+        padding: 0 0 5em 0;
+        background-color: var(--cor-primaria);
+    }
     .avaliações__container {
         flex-wrap: wrap; /* Permite que os itens quebrem linha */
         gap: 2rem; /* Ajusta o espaçamento */
@@ -497,11 +498,9 @@
 
 
 @media (max-width: 768px) {
-    .cabeçalho {
-        flex-direction: column;
-        align-items: center;
+    .paragrafo {
+        display: none;
     }
-
     .lista-menu {
         flex-direction: column;
         gap: 1em;
@@ -572,13 +571,9 @@
     }
 }
 @media (max-width: 480px) {
-    .cabeçalho {
-        flex-direction: column;
-        align-items: center;
-    }
     .corpo{
         margin: 0;
-        padding: 0;
+        padding: 0 0 5em 0;
     }
     .Titulo__home {
         font-size: 1.5em;
@@ -669,6 +664,21 @@
 
     .footer__link:hover {
         text-decoration: underline; /* Adiciona destaque ao passar o mouse */
+    }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    .Titulo__home {
+        font-size: 3em;
+        padding: 2em 0;
+        margin: 0;
+    }
+    .paragrafo{
+        font-size: 1em;
+        padding: 2em 0;
+        margin: 0;
+    }
+    .sobre_textotopico_link__sobre {
+        margin: 1em 1em; /* Ajusta o espaço ao redor dos links */
     }
 }
   

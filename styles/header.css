@@ -1,8 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    border: none;
+    box-sizing: border-box;
 }
+
 .cabeçalho {
     background-color: var(--cor-primaria);
     display: flex;
@@ -10,72 +11,150 @@
     align-items: center;
     padding: 1em;
 }
+
 .lista-menu {
     display: flex;
     list-style: none;
     align-items: center;
+    margin-right: 1em;
 }
+
 .lista-menu__item {
-    margin: 0 4em;
-    letter-spacing: 2px;
+    margin: 0 3em; /* Espaçamento ajustado */
 }
+
 .lista-menu__link {
     color: var(--cor-secundaria);
     font-family: var(--font-secundaria);
     text-decoration: none;
     font-weight: 600;
     font-size: 24px;
-    transition: color 0.3s ease; /* Transição suave para a mudança de cor */
+    transition: color 0.3s ease;
 }
 
 .lista-menu__link:hover {
-    color: var(--cor-terciaria); /* Cor ao passar o mouse */
-}
-.Produtos {
-    display: none;
-    position:absolute;
-    z-index: 10;
-    list-style-type: none;
-}
-.botao {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-.botao:checked ~ .Produtos {
-    display: block;
-}
-.lista-menu__item-categoria-acesso, .lista-menu__item-categoria {
-    text-decoration: none;
-    color: var(--cor-primaria);
-    padding: 1em;
-    background-color: var(--cor-secundaria);
-    font-family: var(--font-secundaria);
-    font-weight: 600;
-    
-}
-.Atendimento {
-    list-style: none;
-    margin: 0;
-    padding: 0
+    color: var(--cor-terciaria);
 }
 
-.Atendimento__texto {
+.menu-hamburguer {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 50px;
+    height: 40px;
+}
+
+.menu-hamburguer div {
+    width: 100%;
+    height: 5px;
+    background-color: var(--cor-secundaria);
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+
+.menu-hamburguer.ativo div:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-hamburguer.ativo div:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-hamburguer.ativo div:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.menu-lateral {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--cor-primaria);
+    padding: 1em;
+    flex-direction: column;
+    z-index: 10;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+}
+
+.menu-lateral .lista-menu__link {
+    color: var(--cor-secundaria);
+    margin: 1em 0;
+}
+
+.menu-hamburguer.ativo + .menu-lateral {
+    transform: translateY(0);
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+}
+
+.atendimento__link {
     display: block;
     background-color: var(--cor-terciaria);
-    padding: 1em 2em;
-    border-radius: 30px;
+    padding: 0.8em 1.5em; /* Ajustado para maior equilíbrio */
+    border-radius: 20px;
     color: var(--cor-primaria);
     text-decoration: none;
     font-family: var(--font-secundaria);
-    font-weight: 600;
-    text-align: center;
+    font-weight: bold;
     transition: background-color 0.3s ease;
-    margin-right: 4em;
-    white-space: nowrap;
+    font-size: 18px;
+    white-space: nowrap; /* Impede que o texto seja quebrado em várias linhas */
+    letter-spacing: 3px;
 }
 
-.Atendimento__texto:hover {
-    background-color: 	#25D366;
-    color: white;
+.atendimento__link:hover {
+    background-color: #25D366;
+    color: var(--cor-secundaria);
+}
+
+@media (max-width: 1200px) {
+    .cabeçalho {
+        padding: 2em 2em 0 0;
+    }
+    .lista-menu {
+        display: none; /* Oculto por padrão */
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+        position: absolute;
+        right: 0; /* Alinhado à direita */
+    }
+    .lista-menu__item {
+        padding: 0.1em 3em;
+    }
+    .menu-hamburguer {
+        display: flex;
+        width: 70px; /* Aumentado */
+        height: 55px; /* Aumentado */
+        background-color: var(--cor-primaria);
+        background: none; /* Remove o fundo */
+        border: none; /* Remove a borda */
+    }
+
+    .atendimento {
+        display: none; /* Remove o botão de atendimento */
+    }
+
+    .lista-menu__link {
+        text-decoration: none; /* Remove a decoração padrão do bottom */
+    }
+}
+
+
+@media (min-width: 1201px) {
+
+
+    .cabeçalho {
+        justify-content: flex-start;
+    }
+
+    .lista-menu {
+        margin-left: auto;
+    }
+
+    .atendimento {
+        margin-left: 1em;
+    }
 }
