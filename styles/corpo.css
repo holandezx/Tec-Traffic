@@ -486,7 +486,7 @@
     }
     .clientes__lista {
         flex-direction: column;
-    }
+    }s
     .clientes__lista__linha {
         flex-direction: column;
     }
@@ -509,6 +509,11 @@
     .avaliações__container {
         margin: 1em 2.4em;
     }
+    .botao__corpo {
+        font-size: 1.5em;
+        margin: 3em 0;
+    }
+
 
     .sobre__pagina, .empresa, .sobre__produtos, .confiabilidade__sobre {
         padding: 1.5em;
@@ -570,11 +575,11 @@
         padding: 0;
     }
     .Titulo__home {
-        font-size: 2em;
+        font-size: 1.5em;
     }
     .paragrafo{
-        font-size: 1.5em;
-        padding: 0 0 3em 0;
+        font-size: 1em;
+        padding: 0 0 4em 0;
     }
 
     .lista-menu {
