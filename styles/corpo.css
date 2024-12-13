@@ -682,12 +682,11 @@
     }
 }
 @media (min-width: 1201px) and (max-width: 1650px) {
-
-
     .corpo {
         display: flex;
-        justify-content: center;
-        flex-direction: column;
+        flex-direction: column; /* Organiza os itens verticalmente */
+        align-items: center;    /* Centraliza horizontalmente */
+        text-align: center;     /* Centraliza o texto dentro de cada elemento */
     }
 
     .Titulo__home {
@@ -702,7 +701,8 @@
         font-size: 2rem;
     }
     .botao__corpo {
-        margin: 0 22em;
+        display: inline-block;
+        margin: 0;
         text-align: center;
     }
     .Sobre__conteudo {
@@ -713,7 +713,10 @@
     .sobre_textotopico_link__sobre {
         margin: 0;
     }
-
+    .Sobre {
+        display: flex;
+        flex-direction: column;
+    }
     .clientes {
         margin: 0;
         padding: 0;
