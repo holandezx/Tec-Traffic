@@ -265,7 +265,7 @@
     transition: transform 0.3s ease;
 }
 .sobre_textotopico_link__sobre {
-    margin-right: 38rem;
+    display: inline-flex;
 }
 .imagem_sobre_home {
     max-width: 40%;
@@ -681,4 +681,44 @@
         margin: 1em 1em; /* Ajusta o espaço ao redor dos links */
     }
 }
-  
+@media (min-width: 1201px) and (max-width: 1650px) {
+
+
+    .corpo {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .Titulo__home {
+        text-align: center;
+        margin: 0;
+        padding: 3em;
+    }
+    .paragrafo {
+        text-align: center;
+        margin: 0;
+        padding: 0 6em 3em 6em;
+        font-size: 2rem;
+    }
+    .botao__corpo {
+        margin: 0 22em;
+        text-align: center;
+    }
+    .Sobre__conteudo {
+        text-align: center;
+        margin: 2em 2em 2em 2em;
+    }
+
+    .sobre_textotopico_link__sobre {
+        margin: 0;
+    }
+
+    .clientes {
+        margin: 0;
+        padding: 0;
+    }
+    .clientes__lista {
+        align-items: center;
+    }
+}
