@@ -725,3 +725,14 @@
         align-items: center;
     }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .sobre_textotopico_link {
+        display: inline-flex;
+        margin: 0;
+    }
+    .contato__bloco__texto__redes {
+        margin: 1em 3em;
+        padding: 1em 3em;
+    }
+}

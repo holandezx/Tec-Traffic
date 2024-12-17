@@ -32,6 +32,7 @@
     max-width: 40%;
     align-self: flex-end;
     padding: 0 5em 0 0;
+    margin: auto;
 }
 .confiabilidade__sobre {
     padding: 5em 0 0 0;
@@ -117,5 +118,16 @@
     }
     .sobre_textotopicos_paragrafo {
         font-size: 1.4em;
+    }
+  }
+  @media (min-width: 1024px) and (max-width: 1500px) {
+    .imagem_sobre_sobre {
+        max-width: 40% ;
+    }
+    .empresa2 {
+        margin: 1em 2em 1em 2em;
+    }
+    .sobre__produtos2 {
+        margin: 1em 2em 1em 2em;
     }
   }
