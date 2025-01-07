@@ -33,3 +33,22 @@
         font-size: 2em;
     }
 }
+
+@media (max-width: 430px) {
+ .img__produtos {
+    max-width: 150%;
+ }
+ .Produtos_home_ancora {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ .Produtos__produtos__ancora {
+    text-decoration: none;
+    padding: 0;
+    margin: auto;
+    margin: 4em 0 4em 0;
+}
+}
