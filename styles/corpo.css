@@ -295,6 +295,9 @@
   .clientes__lista__linha {
     display: flex;
   }
+  .clientes__lista__linha2 {
+    justify-content: center;
+  }
   .clientes__lista__conteudo {
     padding: 1rem;
     text-align: center;
